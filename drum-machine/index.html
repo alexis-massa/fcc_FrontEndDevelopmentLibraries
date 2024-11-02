@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drum Machine</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="drum-machine" class="container text-center">
+    <div class="grid-container">
+      <div id="Q" class="drum-pad">
+        <button type="button" class="btn btn-secondary">Q</button>
+        <audio src="/" id="Q" class="clip"></audio>
+      </div>
+      <div id="W" class="drum-pad">
+        <button type="button" class="btn btn-secondary">W</button>
+        <audio src="/" id="W" class="clip"></audio>
+      </div>
+      <div id="E" class="drum-pad">
+        <button type="button" class="btn btn-secondary">E</button>
+        <audio src="/" id="E" class="clip"></audio>
+      </div>
+      <div id="A" class="drum-pad">
+        <button type="button" class="btn btn-secondary">A</button>
+        <audio src="/" id="A" class="clip"></audio>
+      </div>
+      <div id="S" class="drum-pad">
+        <button type="button" class="btn btn-secondary">S</button>
+        <audio src="/" id="S" class="clip"></audio>
+      </div>
+      <div id="D" class="drum-pad">
+        <button type="button" class="btn btn-secondary">D</button>
+        <audio src="/" id="D" class="clip"></audio>
+      </div>
+      <div id="Z" class="drum-pad">
+        <button type="button" class="btn btn-secondary">Z</button>
+        <audio src="/" id="Z" class="clip"></audio>
+      </div>
+      <div id="X" class="drum-pad">
+        <button type="button" class="btn btn-secondary">X</button>
+        <audio src="/" id="X" class="clip"></audio>
+      </div>
+      <div id="C" class="drum-pad">
+        <button type="button" class="btn btn-secondary">C</button>
+        <audio src="/" id="C" class="clip"></audio>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div id="display" class="col"></div>
+      <div id="options" class="col">
+        <div class="row">
+          <div class="col">Options</div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="onoff">
+              <label class="form-check-label" for="onoff">ON / OFF</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="switch">
+              <label class="form-check-label" for="switch">Switch audios</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
